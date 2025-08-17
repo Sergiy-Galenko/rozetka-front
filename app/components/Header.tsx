@@ -26,9 +26,14 @@ export default function Header() {
         <button className={styles.menuButton} aria-label="Відкрити меню">
           <GiHamburgerMenu />
         </button>
+
         <Link href="/">
           <Image
-            src={isTablet ? "https://content1.rozetka.com.ua/mb_logo/image_site_mini_logo/original/555588633.svg" : "/images/rozetka-logo.svg"}
+            src={
+              isTablet
+                ? "https://content1.rozetka.com.ua/mb_logo/image_site_mini_logo/original/555588633.svg"
+                : "/images/rozetka-logo.svg"
+            }
             alt="Rozetka Logo"
             width={140}
             height={40}
@@ -36,9 +41,13 @@ export default function Header() {
             className={styles.logo}
           />
         </Link>
-        <CatalogButton />
+
+        <div className={styles.catalogBtnWrap}>
+          <CatalogButton />
+        </div>
       </div>
+
       <SearchInput />
     </header>
   );
-} 
+}

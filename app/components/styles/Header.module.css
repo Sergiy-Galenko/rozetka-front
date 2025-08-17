@@ -27,4 +27,15 @@
 .logo {
   height: 2.5rem;
   width: auto;
-} 
+}
+
+/* Відступ між кнопкою каталогу та полем пошуку */
+.catalogBtnWrap {
+  margin-right: 1rem;
+}
+
+@media (max-width: 640px) {
+  .catalogBtnWrap {
+    margin-right: 0.5rem; /* менший відступ на мобілці */
+  }
+}
