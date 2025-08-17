@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "Інтернет-магазин ROZETKA™: офіційний сайт онлайн",
   description: "Офіційний сайт інтернет-магазину ROZETKA™. Купуйте онлайн з доставкою по Україні.",
   icons: {
-    icon: "/images/favicon.ico",
+    icon: "/images/image.ico",
   },
 };
 
@@ -29,7 +29,7 @@ export default function RootLayout({
     <html lang="uk">
       <head>
         <title>Інтернет-магазин ROZETKA™: офіційний сайт онлайн</title>
-        <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="https://content1.rozetka.com.ua/mb_logo/image_site_mini_logo/original/555588633.svg" type="image/svg+xml" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

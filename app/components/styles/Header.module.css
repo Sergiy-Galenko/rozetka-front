@@ -1,0 +1,30 @@
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  background: #000;
+  position: relative;
+}
+
+.leftSection {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.menuButton {
+  margin-right: 1rem;
+  font-size: 2rem;
+  color: #fff;
+  transition: color 0.2s;
+}
+.menuButton:hover {
+  color: #39f400;
+}
+
+.logo {
+  height: 2.5rem;
+  width: auto;
+} 
