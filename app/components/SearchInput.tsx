@@ -10,8 +10,9 @@ export default function SearchInput() {
   return (
     <div className={focused ? styles.wrapperFocused : styles.wrapper}>
       <div className={styles.inputContainer}>
-        <span className={styles.icon}>
-          <RiSearchLine className={styles.iconSvg} />
+        {/* preventDefault, щоб клік по іконці не забирав фокус з інпута */}
+        <span className={styles.icon} onMouseDown={(e) => e.preventDefault()}>
+          <RiSearchLine className={styles.iconSvg} aria-hidden="true" />
         </span>
         <input
           type="text"
@@ -19,8 +20,9 @@ export default function SearchInput() {
           onFocus={() => setFocused(true)}
           onBlur={() => setFocused(false)}
           className={focused ? styles.inputFocused : styles.input}
+          aria-label="Пошук товарів"
         />
       </div>
     </div>
   );
-} 
+}
