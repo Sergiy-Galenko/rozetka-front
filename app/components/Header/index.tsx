@@ -2,16 +2,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
-import CatalogButton from "./CatalogButton";
-import SearchInput from "./SearchInput";
+import CatalogButton from "../CatalogButton";
+import SearchInput from "../SearchInput";
 import React, { useEffect, useState } from "react";
-import styles from "./styles/Header.module.css";
+import styles from "./index.module.css";
 
 export default function Header() {
   const [isTablet, setIsTablet] = useState(false);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(min-width: 640px) and (max-width: 1023px)");
+    const mediaQuery = window.matchMedia(
+      "(min-width: 640px) and (max-width: 1023px)",
+    );
     const handleChange = (e: MediaQueryListEvent | MediaQueryList) => {
       setIsTablet(e.matches);
     };
