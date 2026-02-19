@@ -2,6 +2,7 @@
   width: 100%;
   display: flex;
   align-items: center;
+  gap: 1rem;
   padding: 0.5rem 1rem;
   box-shadow: 0 1px 4px rgba(0,0,0,0.08);
   background: #000;
@@ -29,13 +30,18 @@
   width: auto;
 }
 
-/* Відступ між кнопкою каталогу та полем пошуку */
 .catalogBtnWrap {
-  margin-right: 1rem;
+  /* margin handled by header gap */
+}
+
+.searchWrap {
+  flex: 1;
+  min-width: 0;
+  display: flex;
 }
 
 @media (max-width: 640px) {
-  .catalogBtnWrap {
-    margin-right: 0.5rem; /* менший відступ на мобілці */
+  .header {
+    gap: 0.5rem;
   }
 }

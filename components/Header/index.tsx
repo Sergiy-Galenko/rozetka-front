@@ -49,7 +49,9 @@ export default function Header() {
         </div>
       </div>
 
-      <SearchInput />
+      <div className={styles.searchWrap}>
+        <SearchInput />
+      </div>
     </header>
   );
 }
