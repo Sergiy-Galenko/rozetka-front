@@ -1,5 +1,5 @@
 "use client";
-import "../../../i18n";
+import "@/i18n";
 import React from "react";
 import { RiApps2Line } from "react-icons/ri";
 import { useTranslation } from "react-i18next";
