@@ -40,6 +40,12 @@
   display: flex;
 }
 
+.basketBtnWrap {
+  align-self: stretch;
+  display: flex;
+  align-items: stretch;
+}
+
 @media (max-width: 640px) {
   .header {
     gap: 0.5rem;

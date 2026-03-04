@@ -4,6 +4,7 @@ import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
 import CatalogButton from "../CatalogButton";
 import SearchInput from "../SearchInput";
+import BasketButton from "../SlBasketButton";
 import React, { useEffect, useState } from "react";
 import styles from "./index.module.css";
 
@@ -51,6 +52,10 @@ export default function Header() {
 
       <div className={styles.searchWrap}>
         <SearchInput />
+      </div>
+
+      <div className={styles.basketBtnWrap}>
+        <BasketButton />
       </div>
     </header>
   );
