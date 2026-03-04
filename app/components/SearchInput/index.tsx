@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { RiSearchLine, RiMicLine } from "react-icons/ri";
+import UserButton from "../UserButton";
 import styles from "./index.module.css";
 
 export default function SearchInput() {
@@ -33,6 +34,7 @@ export default function SearchInput() {
         <button type="button" className={styles.searchButton}>
           Знайти
         </button>
+        <UserButton />
       </div>
     </div>
   );
